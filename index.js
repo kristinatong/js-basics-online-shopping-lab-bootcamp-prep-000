@@ -56,7 +56,7 @@ function removeFromCart(item) {
       count++
     }
   }
-  if (count == 0){
+  if (count === 0){
     return 'That item is not in your cart.'
   }
   else{
