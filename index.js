@@ -49,10 +49,18 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var count = 0;
   for(var i=0;i<cart.length;i++){
     if(cart[i].itemName == item){
       delete cart[i]
+      count++
     }
+  }
+  if (count == 0){
+    return 'That item is not in your cart.'
+  }
+  else{
+    return cart
   }
   return cart
 }
