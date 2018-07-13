@@ -62,7 +62,6 @@ function removeFromCart(item) {
   else{
     return cart
   }
-  return cart
 }
 
 function placeOrder(cardNumber) {
