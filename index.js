@@ -54,7 +54,7 @@ function removeFromCart(item) {
       delete cart[i]
     }
   }
-  return 
+  return cart
 }
 
 function placeOrder(cardNumber) {
